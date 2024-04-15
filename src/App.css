@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
-}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Import Google Fonts Neucha
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+Define styles for elements with class "App"
+  Set width to 100% of viewport width
+  Set minimum height to 100% of viewport height
+  Display elements as a flex container
+  Arrange flex items in a column
+  Align flex items along the center of the cross axis
+  Set background color to a shade of blue
+  Set font family to "Neucha" and fallback to cursive
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+Define styles for elements with class "heading"
+  Transform text to uppercase
+  Set font size to 40 pixels
+  Set margin above and below to 30 pixels, left and right to 0
+  Set text color to white
+  Set z-index to 1 (for positioning)
+  Align text to the center
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+Media query for screens with maximum width of 800px
+  Adjust styles for elements with class "heading" within the media query
+  Reduce top and bottom margin to 15 pixels
+  Reduce font size to 35 pixels
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

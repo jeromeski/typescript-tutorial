@@ -1,0 +1,76 @@
+------------
+ INPUTFIELD
+------------
+Import React library and useRef hook
+Import CSS file
+Define interface for props
+Define a function component named InputField that accepts props
+  Create a reference to a DOM input element
+  Return a form element
+      Add a class name to the form element
+      Add an event listener for form submission
+      Call the handleAdd function passed in props when the form is submitted
+           Check if the inputRef has been initialized before accessing its properties
+            Remove focus from the input element
+
+        Set the input type to text
+        Set a placeholder text for the input
+        Set the value of the input to the value of the todo state passed in props
+        Assign the inputRef to the input element
+        Add an event listener for input changes
+        Add a class name to the input element
+
+        Set the button type to submit
+        dd a class name to the button element
+Export the InputField component as default
+  
+------------
+  TODOLIST
+------------
+
+------------
+  APP
+------------
+- Import necessary modules and components:
+  - React and useState from "react"
+  - CSS file "./App.css"
+  - InputField component from "./components/InputField"
+  - TodoList component from "./components/TodoList"
+  - DragDropContext and DropResult from "react-beautiful-dnd"
+  - Todo model from "./models/models"
+
+- Define the main component named App as a functional component:
+  - Initialize state variables:
+    - todo: string
+    - todos: array of Todo objects
+    - CompletedTodos: array of Todo objects
+
+  - Define a function handleAdd to handle addition of todos:
+    - Prevent default form submission behavior
+    - Check if todo is not empty
+      - If not empty, add a new todo to the todos array with current timestamp as id, todo text, and isDone set to false
+      - Reset the todo input field to empty
+
+  - Define a function onDragEnd to handle drag and drop functionality:
+    - Extract destination and source from the DropResult
+    - Log the result
+    - If there is no destination, exit the function
+    - If destination and source are the same, exit the function
+    - Initialize variables add, active (reference to todos), and complete (reference to CompletedTodos)
+    - Source Logic:
+      - If source droppableId is "TodosList", remove todo from active at the source index
+      - Otherwise, remove todo from complete at the source index
+    - Destination Logic:
+      - If destination droppableId is "TodosList", insert todo to active at destination index
+      - Otherwise, insert todo to complete at destination index
+    - Update state variables CompletedTodos and todos with the modified complete and active arrays
+
+  - Render JSX elements:
+    - DragDropContext with onDragEnd handler
+      - div with className "App":
+        - span with className "heading" containing text "Taskify"
+        - InputField component passing todo state, setTodo function, and handleAdd function as props
+        - TodoList component passing todos, setTodos, CompletedTodos, and setCompletedTodos as props
+
+- Export the App component as the default export
+
