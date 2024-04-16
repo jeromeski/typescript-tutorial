@@ -1,7 +1,7 @@
 // Import React library and useRef hook
 import { useRef } from "react";
 // Import CSS file
-// import styles from "./styles.css";
+import "./styles.css";
 // Define interface for props
 interface props {
 	todo: string;
@@ -46,7 +46,7 @@ const InputField: React.FC<props> = ({ todo, setTodo, handleAdd }) => {
 				// Set the button type to submit
 				type="submit"
 				// Add a class name to the button element
-				className="input__submit">
+				className="input_submit">
 				GO
 			</button>
 		</form>

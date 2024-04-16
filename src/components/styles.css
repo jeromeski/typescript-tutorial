@@ -1,110 +1,135 @@
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Define styles for elements with class "input":
-  Set display to flex
-  Set width to 95%
-  Set position to relative
-  Align items along the center
+.input {
+  display: flex;
+  width: 95%;
+  position: relative;
+  align-items: center;
+}
 
-Define styles for elements with class "input__box":
-  Set width to 100%
-  Set border-radius to 50px
-  Set padding to 20px top and bottom, 30px left and right
-  Set font size to 25px
-  Remove border
-  Set transition to 0.2s
-  Apply inset box shadow of 5px with black color
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
 
-Define styles for elements with class "input__box" when focused:
-  Set box shadow to 0 0 10px with a spread radius of 1000px and black color
-  Remove outline
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
 
-Define styles for elements with class "input_submit":
-  Set position to absolute
-  Set width and height to 50px
-  Set margin to 12px
-  Set border-radius to 50px
-  Align to the right
-  Remove border
-  Set font size to 15px
-  Set background color to #2f74c0
-  Set text color to white
-  Set transition to 0.2s for all properties
-  Apply box shadow of 10px with black color
+.input_submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
+}
 
-Define styles for elements with class "input_submit" on hover:
-  Set background color to #388ae2
+.input_submit:hover {
+  background-color: #388ae2;
+}
 
-Define styles for elements with class "input_submit" when active:
-  Set scale to 0.8
-  Apply box shadow of 5px with black color
+.input_submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px black;
+}
 
-Define styles for elements with class "container":
-  Set width to 95%
-  Set display to flex
-  Set margin top to 10px
-  Justify content to space between
-  Align items along flex-start
+.container {
+  width: 95%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-Define styles for elements with class "todos":
-  Set border radius to 5px
-  Set display to flex
-  Arrange flex items in column
-  Set width to 47.5%
-  Set padding to 15px
-  Set background color to rgb(50, 195, 205)
+.todos {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 47.5%;
+  padding: 15px;
+  background-color: rgb(50, 195, 205);
+}
 
-Define styles for elements with class "dragactive":
-  Set background color to rgb(0, 221, 236)
+.dragactive {
+  background-color: rgb(0, 221, 236);
+}
 
-Define styles for elements with class "dragcomplete":
-  Set background color to rgb(255, 38, 0)
+.dragcomplete {
+  background-color: rgb(255, 38, 0);
+}
 
-Define styles for elements with class "remove":
-  Set background color to rgb(235, 103, 80)
+.remove {
+  background-color: rgb(235, 103, 80);
+}
 
-Define styles for elements with class "todos__heading":
-  Set font size to 30px
-  Set text color to white
+.todos__heading {
+  font-size: 30px;
+  /* text-align: center; */
+  color: white;
+}
 
-Define styles for elements with class "todos__single":
-  Set display to flex
-  Set border radius to 5px
-  Set padding to 20px
-  Set margin top to 15px
-  Set background image to specified URL
-  Set transition to 0.2s
+.todos__single {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-image: url("https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg");
+  transition: 0.2s;
+}
 
-Define styles for elements with class "drag":
-  Apply box shadow of 20px with black color
+.drag {
+  box-shadow: 0 0 20px black;
+}
 
-Define styles for elements with class "todos__single" on hover:
-  Apply box shadow of 5px with black color
-  Set scale to 1.03
+.todos__single:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
+}
 
-Define styles for elements with class "todos__single--text":
-  Set flex to 1
-  Set padding to 5px
-  Remove border
-  Set font size to 20px
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
 
-Define styles for elements with class "todos__single--text" when focused:
-  Remove outline
+.todos__single--text:focus {
+  outline: none;
+}
 
-Define styles for elements with class "icon":
-  Set margin left to 10px
-  Set font size to 25px
-  Set cursor to pointer
-  
-Define media query for screens with maximum width of 1100px:
-  Adjust styles for elements with class "todos":
-    Set width to 45%
-Define media query for screens with maximum width of 700px:
-  Adjust styles for elements with class "input":
-    Set width to 95%
-  Adjust styles for elements with class "container":
-    Set width to 95%
-    Set flex direction to column
-  Adjust styles for elements with class "todos":
-    Set width to 95%
-    Set margin bottom to 10px
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.icon {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .todos {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .container {
+    width: 95%;
+    flex-direction: column;
+  }
+  .todos {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}

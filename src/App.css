@@ -1,27 +1,27 @@
-/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Import Google Fonts Neucha
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
-Define styles for elements with class "App"
-  Set width to 100% of viewport width
-  Set minimum height to 100% of viewport height
-  Display elements as a flex container
-  Arrange flex items in a column
-  Align flex items along the center of the cross axis
-  Set background color to a shade of blue
-  Set font family to "Neucha" and fallback to cursive
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f74c0;
+  font-family: "Neucha", cursive;
+}
 
-Define styles for elements with class "heading"
-  Transform text to uppercase
-  Set font size to 40 pixels
-  Set margin above and below to 30 pixels, left and right to 0
-  Set text color to white
-  Set z-index to 1 (for positioning)
-  Align text to the center
+.heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 0;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
 
-Media query for screens with maximum width of 800px
-  Adjust styles for elements with class "heading" within the media query
-  Reduce top and bottom margin to 15 pixels
-  Reduce font size to 35 pixels
-  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
-
+@media (max-width: 800px) {
+  .heading {
+    margin: 15px 0;
+    font-size: 35px;
+  }
+}

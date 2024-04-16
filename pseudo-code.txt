@@ -74,3 +74,140 @@ Export the InputField component as default
 
 - Export the App component as the default export
 
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Define styles for elements with class "input":
+  Set display to flex
+  Set width to 95%
+  Set position to relative
+  Align items along the center
+
+Define styles for elements with class "input__box":
+  Set width to 100%
+  Set border-radius to 50px
+  Set padding to 20px top and bottom, 30px left and right
+  Set font size to 25px
+  Remove border
+  Set transition to 0.2s
+  Apply inset box shadow of 5px with black color
+
+Define styles for elements with class "input__box" when focused:
+  Set box shadow to 0 0 10px with a spread radius of 1000px and black color
+  Remove outline
+
+Define styles for elements with class "input_submit":
+  Set position to absolute
+  Set width and height to 50px
+  Set margin to 12px
+  Set border-radius to 50px
+  Align to the right
+  Remove border
+  Set font size to 15px
+  Set background color to #2f74c0
+  Set text color to white
+  Set transition to 0.2s for all properties
+  Apply box shadow of 10px with black color
+
+Define styles for elements with class "input_submit" on hover:
+  Set background color to #388ae2
+
+Define styles for elements with class "input_submit" when active:
+  Set scale to 0.8
+  Apply box shadow of 5px with black color
+
+Define styles for elements with class "container":
+  Set width to 95%
+  Set display to flex
+  Set margin top to 10px
+  Justify content to space between
+  Align items along flex-start
+
+Define styles for elements with class "todos":
+  Set border radius to 5px
+  Set display to flex
+  Arrange flex items in column
+  Set width to 47.5%
+  Set padding to 15px
+  Set background color to rgb(50, 195, 205)
+
+Define styles for elements with class "dragactive":
+  Set background color to rgb(0, 221, 236)
+
+Define styles for elements with class "dragcomplete":
+  Set background color to rgb(255, 38, 0)
+
+Define styles for elements with class "remove":
+  Set background color to rgb(235, 103, 80)
+
+Define styles for elements with class "todos__heading":
+  Set font size to 30px
+  Set text color to white
+
+Define styles for elements with class "todos__single":
+  Set display to flex
+  Set border radius to 5px
+  Set padding to 20px
+  Set margin top to 15px
+  Set background image to specified URL
+  Set transition to 0.2s
+
+Define styles for elements with class "drag":
+  Apply box shadow of 20px with black color
+
+Define styles for elements with class "todos__single" on hover:
+  Apply box shadow of 5px with black color
+  Set scale to 1.03
+
+Define styles for elements with class "todos__single--text":
+  Set flex to 1
+  Set padding to 5px
+  Remove border
+  Set font size to 20px
+
+Define styles for elements with class "todos__single--text" when focused:
+  Remove outline
+
+Define styles for elements with class "icon":
+  Set margin left to 10px
+  Set font size to 25px
+  Set cursor to pointer
+  
+Define media query for screens with maximum width of 1100px:
+  Adjust styles for elements with class "todos":
+    Set width to 45%
+Define media query for screens with maximum width of 700px:
+  Adjust styles for elements with class "input":
+    Set width to 95%
+  Adjust styles for elements with class "container":
+    Set width to 95%
+    Set flex direction to column
+  Adjust styles for elements with class "todos":
+    Set width to 95%
+    Set margin bottom to 10px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Import Google Fonts Neucha
+
+Define styles for elements with class "App"
+  Set width to 100% of viewport width
+  Set minimum height to 100% of viewport height
+  Display elements as a flex container
+  Arrange flex items in a column
+  Align flex items along the center of the cross axis
+  Set background color to a shade of blue
+  Set font family to "Neucha" and fallback to cursive
+
+Define styles for elements with class "heading"
+  Transform text to uppercase
+  Set font size to 40 pixels
+  Set margin above and below to 30 pixels, left and right to 0
+  Set text color to white
+  Set z-index to 1 (for positioning)
+  Align text to the center
+
+Media query for screens with maximum width of 800px
+  Adjust styles for elements with class "heading" within the media query
+  Reduce top and bottom margin to 15 pixels
+  Reduce font size to 35 pixels
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
